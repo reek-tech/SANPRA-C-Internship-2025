@@ -2,8 +2,10 @@
 
 // Function to encrypt/decrypt a file using XOR
 void encryptDecrypt(const char *inputFile, const char *outputFile, char key) {
-    FILE *fin = fopen(inputFile, "r");   // read input file
-    FILE *fout = fopen(outputFile, "w"); // write output file
+    // read input file
+    FILE *fin = fopen(inputFile, "r");  
+    // write output file
+    FILE *fout = fopen(outputFile, "w"); 
 
     if (!fin || !fout) {
         printf("Error opening files!\n");
@@ -38,3 +40,4 @@ int main() {
 
     return 0;
 }
+
